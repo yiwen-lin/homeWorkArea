@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+<input type="number" id="keyInPrev">
++
+<input type="number" id="keyInNext">
+
+
+<button id="btn">計算</button>
+<div id="resultBox"></div>
+
+
+<script>
+	
+	document.getElementById("btn").addEventListener("click",function(){
+		var keyInPrev = document.getElementById('keyInPrev').value;
+		var keyInNext = document.getElementById('keyInNext').value;
+		document.getElementById("resultBox").innerHTML = resulttt(keyInPrev,keyInNext);
+
+	});
+	function resulttt(keyInPrev,keyInNext){
+		var keyInPrev = parseInt(keyInPrev);
+		var keyInNext = parseInt(keyInNext);	
+		
+		return(keyInPrev + keyInNext);	 
+	};
+
+
+
+</script>
+
+</body>
+</html>
